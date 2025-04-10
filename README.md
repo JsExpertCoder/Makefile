@@ -345,7 +345,7 @@ It is standard practice for every makefile to have a variable named `objects`, `
 
 We would define such a variable with a line like this in the Makefile:
 ```makefile
-objects = main.p kbd.o command.o display.o \
+objects = main.o kbd.o command.o display.o \
           insert.o search.o files.o utils.o
 ```
 Then, each place we want to put a list of the object file names, we can substitute the variable's value by writing `$(objects)`.
